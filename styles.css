@@ -16,3 +16,33 @@ header .brand-lockup, footer .brand-lockup{width:auto;height:auto}.brand-lockup 
 :root{--accent:#ff2434}.hero{background:#091119;color:#fff;min-height:560px}.hero-copy{background:linear-gradient(90deg,#091119 0%,#091119 78%,rgba(9,17,25,.82) 100%);padding:75px 6vw 75px 8vw;position:relative;z-index:2}.hero .eyebrow{color:#d7d9dc;letter-spacing:.22em;font-size:13px}.hero h1{color:#fff;font-size:clamp(48px,5vw,76px);letter-spacing:-.035em;margin:14px 0 20px}.hero-copy>p{color:#f0f2f4;max-width:540px;font-size:18px;line-height:1.55}.hero .primary{background:#ff1f32;color:#fff;border-radius:999px;padding:16px 25px;box-shadow:0 10px 30px rgba(255,31,50,.18)}.hero .primary:hover{background:#e91729}.hero-img{min-height:560px;overflow:hidden}.hero-img:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,17,25,.35),transparent 30%);pointer-events:none}.hero-img img{object-position:center center}.actions{margin:24px 0 0}.trust{display:none}@media(max-width:900px){.hero-copy{padding:65px 7vw}.hero-img{min-height:430px}.hero-img:after{background:linear-gradient(0deg,rgba(9,17,25,.18),transparent 45%)}}
 /* Hero secondary actions + red social icons */
 .hero-actions{display:flex;flex-direction:column;align-items:flex-start;gap:10px}.hero-actions .primary,.hero-work{width:285px;text-align:center}.hero-work{border:2px solid #ff1f32!important;border-radius:999px!important;color:#fff!important;background:transparent;padding:14px 24px}.hero-work span{color:#ff1f32;margin-left:12px}.hero-work:hover{background:#ff1f32;color:#fff!important}.hero-work:hover span{color:#fff}.hero-socials{display:flex;gap:14px;margin-top:2px}.hero-socials a{width:48px;height:48px;border-radius:50%;background:#ff1f32;display:grid;place-items:center;color:#fff;transition:.2s}.hero-socials a:hover{transform:translateY(-2px);background:#e91729}.hero-socials svg{width:22px;height:22px;fill:currentColor;stroke:currentColor;stroke-width:1.8}.hero-socials a[aria-label="Instagram"] svg{fill:none;stroke:#fff}.hero-socials a[aria-label="Facebook"] svg{stroke:none}@media(max-width:560px){.hero-actions,.hero-actions .primary,.hero-work{width:100%}.hero-socials{width:auto}.hero-socials a{width:46px;height:46px}}
+
+/* Red edge glow + footer social/nav layout */
+header{background:
+  radial-gradient(circle at 0% 50%,rgba(255,20,45,.48),transparent 20%),
+  radial-gradient(circle at 100% 50%,rgba(255,20,45,.42),transparent 22%),
+  linear-gradient(110deg,#080b0e 0%,#101820 55%,#140d11 100%)}
+footer{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 0% 50%,rgba(255,20,45,.48),transparent 22%),
+    radial-gradient(circle at 100% 50%,rgba(255,20,45,.45),transparent 22%),
+    linear-gradient(110deg,#0b1117 0%,#0c131a 50%,#120b10 100%);
+  padding:28px 8vw 18px
+}
+.footer-main{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:50px;position:relative;z-index:1}
+.footer-links{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;color:#eef1f3;font-size:13px}
+.footer-links a:hover{color:#ff2434}
+.footer-socials{display:flex;gap:14px}
+.footer-socials a{width:42px;height:42px;border:2px solid #ff2434;border-radius:50%;display:grid;place-items:center;color:#ff2434;transition:.2s}
+.footer-socials a:hover{background:#ff2434;color:#fff;transform:translateY(-2px)}
+.footer-socials svg{width:20px;height:20px;fill:currentColor;stroke:currentColor;stroke-width:1.8}
+.footer-socials a[aria-label="Instagram"] svg{fill:none}
+.footer-socials a[aria-label="Facebook"] svg{stroke:none}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:20px;padding-top:16px;text-align:center;position:relative;z-index:1}
+.footer-bottom small{color:#87919a}
+@media(max-width:900px){
+ .footer-main{grid-template-columns:1fr;justify-items:center;text-align:center;gap:24px}
+ .footer-links{gap:20px}
+}
