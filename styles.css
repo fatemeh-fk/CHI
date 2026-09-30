@@ -77,3 +77,12 @@ footer{
   color:#fff!important;
 }
 .hero-socials a[aria-label="Instagram"] svg{stroke:currentColor!important}
+
+/* Two review cards on desktop */
+@media(min-width:901px){
+  .testimonial-slider{grid-template-columns:50px minmax(0,1100px) 50px}
+  .testimonial-track{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;min-height:320px}
+  .testimonial.active{display:block;height:100%}
+  .testimonial{padding:38px 34px}
+  .testimonial p{font-size:16px;line-height:1.7}
+}
