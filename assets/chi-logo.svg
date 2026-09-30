@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+<rect width="1024" height="1024" fill="#000"/>
+<g fill="#fff">
+<rect x="335" y="255" width="78" height="370"/>
+<path d="M335 565h120v40H335z"/>
+<path d="M470 255h220v39H550v451l-80-45z"/>
+<rect x="615" y="334" width="77" height="185"/>
+<path d="M570 410h120v40H570z"/>
+<path d="M614 516h78v51l-78 48z"/>
+<rect x="630" y="139" width="78" height="77"/>
+</g>
+<text x="512" y="820" text-anchor="middle" fill="#fff" font-family="Arial Narrow,Arial,sans-serif" font-size="55" font-weight="800" letter-spacing="2">Canada Home Improvement</text>
+</svg>
