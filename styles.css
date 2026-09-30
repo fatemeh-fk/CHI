@@ -305,3 +305,15 @@ footer{
   .services{grid-template-columns:1fr}
   .services article{min-height:0}
 }
+
+.form-status{
+  min-height:22px;
+  margin-top:4px;
+  font-size:13px;
+  line-height:1.5;
+  color:#475467;
+}
+.form button:disabled{
+  opacity:.7;
+  cursor:not-allowed;
+}
