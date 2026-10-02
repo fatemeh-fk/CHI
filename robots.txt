@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://canadahomeimprovement.ca/sitemap.xml
