@@ -492,3 +492,15 @@ footer{
   .why-lead{font-size:15px}
   .feature-card{grid-template-columns:40px 1fr}
 }
+
+.captcha-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  min-height:78px;
+  padding:4px 0 2px;
+  overflow:hidden;
+}
+@media(max-width:420px){
+  .captcha-wrap{transform:scale(.9);transform-origin:left center;width:111%}
+}
